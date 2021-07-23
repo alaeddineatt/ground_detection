@@ -4,6 +4,8 @@ import math
 from math import isclose
 import copy
 import random
+from numpy import absolute, greater_equal, less_equal
+import random
 
 def ReadPcdPoint(f_number):
     """ read point from ply
@@ -15,7 +17,7 @@ def ReadPcdPoint(f_number):
         [ndarray]: N x 3 point clouds
     """
     point_cloud_optimized = []
-    path = "/home/holon-01/Desktop/ground_detection/new_dataset/5fps/%03d_base.pcd"%f_number
+    path = "path/to/dataset"%f_number
     pcd = o3d.io.read_point_cloud(path)
     print("la taille du pc",pcd)
     

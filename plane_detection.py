@@ -1,5 +1,5 @@
 
-from numpy import absolute, greater_equal, less_equal
+
 from utils import *
 
 
@@ -8,13 +8,11 @@ back_to_line = "\n        \n"
 
 
 def main():
-    import random
-<<<<<<< HEAD
+    
+
     point_cloud,point_cloud_op = ReadPcdPoint(1)
-=======
    
     point_cloud = ReadPcdPoint("path_to_data")
->>>>>>> b2dee180a21764f1a58160e8b8c89654e04fc485
     axes = o3d.geometry.TriangleMesh.create_coordinate_frame()
     gravity = np.asarray([0,0,1])
     
